@@ -1,5 +1,4 @@
 import dataset
-import os
 
 DB_URL = dataset.connect("sqlite:///config/guild_config.sqlite3")
 
