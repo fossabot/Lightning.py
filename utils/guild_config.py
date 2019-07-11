@@ -8,5 +8,6 @@ def write_to_guild_config(guid: int, column: str, input: str):
 def remove_from_guild_config(guid: int, column: str):
     DB_URL['config'].delete(guild_id=guid, column=input)
 
-def read_one_guild_config(guid, column: str):
-    DB_URL['config'].find(guild_id=guid)
+def read_guild_config(guid: int):
+    result = DB_URL['config'].find(guild_id=guid)
+    return result
