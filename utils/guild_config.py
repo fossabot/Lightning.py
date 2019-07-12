@@ -6,8 +6,16 @@ def write_to_guild_config(guid: int, column: str, input: str):
     DB_URL['config'].insert(dict(guild_id=guid, column=input))
 
 def remove_from_guild_config(guid: int, column: str):
-    DB_URL['config'].delete(guild_id=guid, column=input)
+    try:
+        res = DB_URL['config'].find(guild_id=guid)
+        for config in res:
+            DB_URL['config'].delete(config[f'{column}'])
+    except:
+        return False
 
 def read_guild_config(guid: int):
-    result = DB_URL['config'].find(guild_id=guid)
-    return result
+    try:
+        result = DB_URL['config'].find(guild_id=guid)
+        return result
+    except:
+        return False
