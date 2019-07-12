@@ -9,7 +9,7 @@ def remove_from_guild_config(guid: int, column: str):
     try:
         res = DB_URL['config'].find(guild_id=guid)
         for config in res:
-            DB_URL['config'].delete(config[f'{column}'])
+            DB_URL['config'].delete(column=config[f'{column}'])
     except:
         return False
 
