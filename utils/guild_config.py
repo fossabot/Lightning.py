@@ -22,7 +22,7 @@ def read_guild_config(guid: int):
 
 def exist_in_guild_config(guid: int, column: str):
     try:
-        res = DB['config'].find(guild_id=guid)
+        res = DB_URL['config'].find(guild_id=guid)
         for conf in res:
             return conf[f'{column}']
     except:
