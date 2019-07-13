@@ -2,7 +2,7 @@ import dataset
 
 DB_URL = dataset.connect("sqlite:///config/guild_config.sqlite3")
 
-def write_to_guild_config(guid: int, column: str, input: str):
+def write_to_guild_config(guid: int, column: str, input):
     res = DB_URL['config'].find_one(guild_id=guid)
     if res is None:
         DB_URL['config'].insert(dict(guild_id=guid, column=input))
