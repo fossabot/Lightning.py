@@ -1,5 +1,6 @@
 # Lightning.py
-[![Discord](https://img.shields.io/discord/527887739178188830.svg)](https://discord.gg/cDPGuYd)
+[![Discord](https://img.shields.io/discord/527887739178188830.svg)](https://discord.gg/cDPGuYd)[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLightSage%2FLightning.py.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FLightSage%2FLightning.py?ref=badge_shield)
+
 
 This version is the successor to Lightning.js
 
@@ -62,3 +63,7 @@ Extended special thanks to:
 
 - aspargas2
 - OthersCallMeGhost
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLightSage%2FLightning.py.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FLightSage%2FLightning.py?ref=badge_large)
